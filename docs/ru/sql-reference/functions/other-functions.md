@@ -775,9 +775,13 @@ blockSerializedSize(value[, value[, ...]])
 
 **Пример**
 
+Запрос:
+
 ``` sql
 SELECT blockSerializedSize(maxState(1)) as x
 ```
+
+Ответ:
 
 ``` text
 ┌─x─┐
