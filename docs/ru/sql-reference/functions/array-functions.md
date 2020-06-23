@@ -798,7 +798,7 @@ SELECT
 └──────────────┴───────────┘
 ```
 
-## arrayReduce(#arrayreduce}
+## arrayReduce (#arrayreduce}
 
 Применяет агрегатную функцию к элементам массива и возвращает ее результат. Имя агрегирующей функции передается как строка в одинарных кавычках `'max'`, `'sum'`. При использовании параметрических агрегатных функций, параметр указывается после имени функции в круглых скобках `'uniqUpTo(6)'`.
 
@@ -871,7 +871,7 @@ SELECT arrayReduce('uniqUpTo(3)', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 **Синтаксис**
 
-``` sql
+```sql
 arrayReduceInRanges(agg_func, ranges, arr1, arr2, ..., arrN)
 ```
 
@@ -887,7 +887,7 @@ arrayReduceInRanges(agg_func, ranges, arr1, arr2, ..., arrN)
 
 Запрос:
 
-``` sql
+```sql
 SELECT arrayReduceInRanges(
     'sum',
     [(1, 5), (2, 3), (3, 4), (4, 4)],
@@ -897,7 +897,7 @@ SELECT arrayReduceInRanges(
 
 Ответ:
 
-``` text
+```text
 ┌─res─────────────────────────┐
 │ [1234500,234000,34560,4567] │
 └─────────────────────────────┘
