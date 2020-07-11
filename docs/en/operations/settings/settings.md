@@ -536,10 +536,6 @@ Possible values:
 
 Default value: `1`.
 
-**See Also**
-
--   [network_compression_method](#network_compression_method)
-
 ## log\_queries {#settings-log-queries}
 
 Setting up query logging.
