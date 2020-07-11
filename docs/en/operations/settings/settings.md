@@ -512,23 +512,23 @@ Default value: 0.
 
 ## network_compression_method {#network_compression_method}
 
-Allows you to select the method of data compression when writing.
-Controls compression, that use internally for communication between servers and for sending data to native clickhouse-client. ClickHouse use the same compression methods as clickhouse-compressor does.
-
-
-It is LZ4 by default, but it could be adjusted with [network_compression_method](#network_compression_method) setting. Possible values are 'lz4' and 'zstd'.
+Sets the method of data compression when writing.
+Controls compression, that uses internally for communication between servers and for sending data to native clickhouse-client. ClickHouse uses the same compression methods as clickhouse-compressor does.
 
 Possible values:
 
 -   `LZ4` — sets LZ4 compression method.
--   `ZSTD` — sets ZSTD compression method. In addition, you can define [network_zstd_compression_level](#network_zstd_compression_level).
+-   `ZSTD` — sets ZSTD compression method.
 
 Default value: `LZ4`.
 
+**See Also**
+
+-   [network_zstd_compression_level](#network_zstd_compression_level)
 
 ## network_zstd_compression_level {#network_zstd_compression_level}
 
-Allows you to select the level of ZSTD compression. Used only when [network_compression_method](#network_compression_method) is set as `ZSTD`.
+Adjusts the level of ZSTD compression. Used only when [network_compression_method](#network_compression_method) is set to `ZSTD`.
 
 Possible values:
 
@@ -536,11 +536,9 @@ Possible values:
 
 Default value: `1`.
 
+**See Also**
 
-
-
-
-
+-   [network_compression_method](#network_compression_method)
 
 ## log\_queries {#settings-log-queries}
 
