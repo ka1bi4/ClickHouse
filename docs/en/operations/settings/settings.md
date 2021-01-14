@@ -2489,13 +2489,10 @@ Default value: 0.
 
 **Example**
 
-Consider the following query with aggregate functions:
+Consider the following query with aggregate functions.
+
 ```sql
-SELECT
-    SUM(-1),
-    MAX(0)
-FROM system.one
-WHERE 0
+SELECT SUM(-1), MAX(0) FROM system.one WHERE 0;
 ```
 
 With `aggregate_functions_null_for_empty = 0` it would produce:
